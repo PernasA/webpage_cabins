@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Glider Test</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.7.8/glider.min.css" />
+  <style>
+    .glider {
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .glider img {
+      display: inline-block;
+      width: 100%;
+      height: auto;
+    }
+    .glider-prev, .glider-next {
+      background: #333;
+      color: white;
+      border: none;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div class="glider-contain">
+  <button class="glider-prev">‹</button>
+  <div class="glider">
+    <img src="images/images_4_pax/cama 1.jpeg" alt="cama 1">
+    <img src="images/images_4_pax/cama 2.jpeg" alt="cama 2">
+    <img src="images/images_4_pax/cama depto 2.jpeg" alt="cama depto 2">
+  </div>
+  <button class="glider-next">›</button>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.7.8/glider.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const gliderEl = document.querySelector('.glider');
+    new Glider(gliderEl, {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      draggable: true,
+      arrows: {
+        prev: document.querySelector('.glider-prev'),
+        next: document.querySelector('.glider-next')
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

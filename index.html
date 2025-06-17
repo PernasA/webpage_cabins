@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cabañas Mi Lugar en Merlo</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.7.8/glider.min.css"
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.7.8/glider.min.js" defer></script>
+  <script src="scripts.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+  <header>
+    <div class="hero">
+      <h1>Cabañas Mi Lugar en Merlo</h1>
+      <p>Naturaleza, descanso y vistas increíbles en las sierras de San Luis</p>
+    </div>
+
+    <nav>
+      <button onclick="showTab('info', ' ')">Información General</button>
+      <button onclick="showTab('unidad2', this)">Unidad para 2 personas</button>
+      <button onclick="showTab('unidad4', this)">Unidad para 4 personas</button>
+      <button onclick="showTab('entorno', this)">Entorno y Paseos</button>
+      <button onclick="showTab('contacto', this)">Contacto</button>
+    </nav>
+
+    <div id="selected-title">
+    </div>
+
+  </header>
+
+  <main>
+  <!-- Información General -->
+  <section id="info" class="tab-content">
+    <section class="info-section">
+      <div class="info-text">
+        <h2 class="high-contrast">Ubicación Residencial</h2>
+        <ul>
+          <li>Merlo zona alta</li>
+          <li>Corredor turístico</li>
+          <li>Cerca del Mirador del Sol</li>
+          <li>A minutos del centro</li>
+        </ul>
+      </div>
+      <div class="info-img">
+        <img src="images/images_home/vista_4.jpeg" alt="Vista desde la casa">
+      </div>
+    </section>
+
+    <section class="info-section reverse">
+      <div class="info-text">
+        <h2 class="high-contrast">Viviendas Nuevas</h2>
+        <ul>
+          <li>Diseño moderno</li>
+          <li>Asador privado</li>
+          <li>Plantas nativas</li>
+          <li>Cochera techada</li>
+        </ul>
+      </div>
+      <div class="info-img">
+        <img src="images/images_home/cama_mono.jpeg" alt="Vivienda con asador">
+      </div>
+    </section>
+
+    <section class="info-section">
+      <div class="info-text">
+        <h2 class="high-contrast">Entorno Natural</h2>
+        <ul>
+          <li>Arroyo natural</li>
+          <li>Balneario cercano</li>
+          <li>Reservas y vistas</li>
+          <li>Tranquilidad total</li>
+        </ul>
+      </div>
+      <div class="info-img">
+        <img src="images/images_home/patio_sillas.jpeg" alt="Reserva natural">
+      </div>
+    </section>
+
+    <section class="info-section reverse">
+      <div class="info-text">
+        <h2 class="high-contrast">Conectividad</h2>
+        <ul>
+          <li>WiFi de 20 a 120 megas</li>
+          <li>Ideal para home office</li>
+        </ul>
+      </div>
+      <div class="info-img">
+        <img src="images/images_home/depto_4_living.jpeg" alt="Espacio de trabajo cómodo">
+      </div>
+    </section>
+
+    <section class="info-section">
+      <div class="info-text">
+        <h2 class="high-contrast">Extras</h2>
+        <ul>
+          <li>Zona fresca, sin pileta</li>
+          <li>No se aceptan mascotas</li>
+          <li>PDFs con info y recorridos</li>
+        </ul>
+      </div>
+      <div class="info-img">
+        <img src="images/images_home/estacionamiento.jpeg" alt="Documentación turística">
+      </div>
+    </section>
+  </section>
+
+  <!-- Lo demás sigue igual... -->
+  </section>
+
+    <section id="unidad2" class="tab-content">
+      <h2>Unidad para 2 personas</h2>
+      <!-- Carruseles o imágenes aquí -->
+       
+    </section>
+
+<section id="unidad4" class="tab-content hidden">
+  <div class="info-section">
+    <div class="info-img" style="flex: 1;">
+      <div class="glider-contain" style="position: relative;">
+        <div class="glider-contain">
+          <button class="glider-prev"><i class="fas fa-chevron-left"></i></button>
+            <div class="glider">
+              <img src="images/images_4_pax/cama 1.jpeg" alt="cama 1">
+              <img src="images/images_4_pax/cama 2.jpeg" alt="cama 2">
+              <img src="images/images_4_pax/cama depto 2.jpeg" alt="cama depto 2">
+              <img src="images/images_4_pax/camas individuales 1 1.jpeg" alt="camas individuales 1 1">
+              <img src="images/images_4_pax/camas individuales 1.jpeg" alt="camas individuales 1">
+              <img src="images/images_4_pax/cartel .jpeg" alt="cartel">
+              <img src="images/images_4_pax/chivito.jpeg" alt="chivito">
+              <img src="images/images_4_pax/depto_4_living.jpeg" alt="depto 4 living">
+              <img src="images/images_4_pax/espejo 2.jpeg" alt="espejo 2">
+              <img src="images/images_4_pax/estacionamiento.jpeg" alt="estacionamiento">
+              <img src="images/images_4_pax/living 2.jpeg" alt="living 2">
+              <img src="images/images_4_pax/mesa sillas 2.jpeg" alt="mesa sillas 2">
+              <img src="images/images_4_pax/parrilla 2.jpeg" alt="parrilla 2">
+              <img src="images/images_4_pax/patio_sillas.jpeg" alt="patio sillas">
+            </div>
+          <button class="glider-next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- ENTORNO -->
+    <section id="entorno" class="tab-content hidden">
+      <h2>Entorno y Paseos por Merlo</h2>
+
+      <div class="carousel-group">
+        <h3>🏞️ Paseos cercanos</h3>
+        <div class="carousel" data-carousel>
+          <img src="images/paseo-1.jpg" alt="Paseo 1" />
+          <img src="images/paseo-2.jpg" alt="Paseo 2" />
+        </div>
+      </div>
+
+      <div class="carousel-group">
+        <h3>🌄 Vistas naturales</h3>
+        <div class="carousel" data-carousel>
+          <img src="images/vistas-1.jpg" alt="Vista 1" />
+          <img src="images/vistas-2.jpg" alt="Vista 2" />
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="tab-content hidden">
+      <h2>Contacto</h2>
+      <p>📞 Teléfono: +54 9 2664 123456</p>
+      <p>📧 Email: contacto@milugarenmerlo.com</p>
+      <p>📍 Dirección: Villa de Merlo, San Luis, Argentina</p>
+      <p>
+        📝 Comentarios de huéspedes:  
+        <a href="https://www.alquilerargentina.com/alojamientos/df49-Casa-Mi-Lugar-en-Merlo-Villa-De-Merlo.html" target="_blank">
+          Ver en AlquilerArgentina
+        </a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Cabañas Mi Lugar en Merlo. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

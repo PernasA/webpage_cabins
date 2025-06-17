@@ -1,0 +1,370 @@
+/* Fondo general con verdes pasto */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #1f3a1d, #3e8e41);
+  color: #f2fff2;
+}
+
+/* HERO (cabecera con fondo de imagen) */
+.hero {
+  background-image: url('images/all_page/background.jpeg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 80px 20px;
+  color: #ffffff;
+  box-shadow: inset 0 -60px 60px rgba(0, 0, 0, 0.5);
+}
+
+/* Título principal */
+.hero h1 {
+  font-size: 52px;
+  font-weight: 900;
+  margin-bottom: 12px;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+}
+
+/* Subtítulo */
+.hero p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+/* Navegación */
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 20px;
+  background-color: rgba(31, 58, 29, 0.95);
+}
+
+/* Botones */
+nav button {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+  background: linear-gradient(135deg, #6dad4b, #a7d78c);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+nav button:hover {
+  background: linear-gradient(135deg, #5d9c3f, #98ce7e);
+  transform: translateY(-2px);
+}
+
+nav button.selected {
+  background: linear-gradient(135deg, #c7b215, #fff8e7);
+  color: #1f1f1f;
+  border: 2px solid #c7b215;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+header {
+  padding-bottom: 0px;
+}
+
+#selected-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #c7b215;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  font-family: 'Segoe UI', sans-serif;
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out;
+  margin: 0;
+  padding-top: 30px;
+}
+
+#selected-title.visible {
+  opacity: 1;
+}
+
+
+
+/* Contenido principal */
+main {
+  padding: 20px 20px;
+}
+
+.tab-content {
+  display: block;
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.04);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Ocultar contenido */
+.hidden {
+  display: none !important;
+}
+
+/* Títulos */
+.tab-content h2, .tab-content h3 {
+  color: #a7d78c;
+}
+
+/* Carrusel */
+.carousel {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding: 10px 0;
+}
+
+.carousel img {
+  height: 200px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.carousel img:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #d0f0c0;
+  background-color: #1f3a1d;
+  font-size: 14px;
+}
+
+/* Info blocks */
+.info-block {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.06);
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 10px;
+  gap: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.info-block img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.info-block p {
+  margin: 0;
+  font-size: 16px;
+  color: #f2fff2;
+  line-height: 1.5;
+}
+
+/* Secciones scroll con alternancia */
+.info-section {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px 0;
+  gap: 30px;
+}
+
+/* Aumenta tamaño de imagen y reduce separación horizontal */
+.info-section {
+  display: flex;
+  flex-wrap: nowrap; /* evita que se rompa en columna en pantallas grandes */
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px 0;
+  gap: 15px; /* más chico para acercar texto a imagen */
+  padding: 0; /* quita padding horizontal extra */
+}
+
+/* En secciones reversas también aplica sin-wrap */
+.info-section.reverse {
+  flex-direction: row-reverse;
+}
+
+.info-text {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-text h2 {
+  color: #a7d78c;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.info-text ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px 30px;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  max-width: 400px;
+  justify-items: start;
+}
+
+.info-text ul li {
+  font-size: 18px;
+  color: #f2fff2;
+  position: relative;
+  padding-left: 22px;
+}
+
+.info-text ul li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: #98ce7e;
+}
+
+
+/* Imagen más grande y pegada al borde */
+.info-img {
+  flex: 1.2; /* le da más espacio proporcional a la imagen */
+  text-align: right;
+}
+
+.info-img img {
+  width: 100%;         /* ocupa el 100% del contenedor */
+  max-width: none;     /* elimina límites previos */
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+  max-width: 500px;
+  margin: 0;
+}
+
+
+/* Mejora de contraste y visibilidad del texto */
+h1, h2, h3, h4, h5, h6, p, li {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+.hero h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+.info-text ul li {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+.high-contrast {
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.85);
+}
+
+@media (max-width: 768px) {
+  .info-section {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .info-img,
+  .info-text {
+    flex: unset;
+    width: 100%;
+    text-align: center;
+  }
+
+  .info-img img {
+    width: 95%;
+  }
+
+  .info-text {
+    padding: 0 10px;
+  }
+}
+
+.glider-contain {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+.glider {
+  margin: 0 auto;
+}
+
+.glider img {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.glider-track {
+  display: flex;
+  align-items: center;
+}
+
+.glider-container {
+  position: relative;
+  padding: 0 70px; /* Espacio a los costados para las flechas */
+}
+
+.glider-wrapper {
+  position: relative;
+  overflow: visible; /* Esto permite que las flechas salgan del glider */
+}
+
+.glider-prev,
+.glider-next {
+  position: absolute !important;
+  top: 50%!important;
+  transform: translateY(-20%)!important;
+  z-index: 20!important;
+  width: 48px!important;
+  height: 48px!important;
+  font-size: 24px!important;
+  border-radius: 100%!important;
+  border: black !important;
+  background-color: rgba(255, 255, 255, 0.671)!important;
+  color: rgb(0, 0, 0)!important;
+  display: flex!important;
+  justify-content: center!important;
+  align-items: center!important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4)!important;
+  cursor: pointer!important;
+  transition: all 0.3s ease!important;
+}
+
+.glider-prev {
+  left: -35px; /* Sale fuera del glider */
+}
+
+.glider-next {
+  right: -35px;
+}
+
+.glider-prev:hover,
+.glider-next:hover {
+  background-color: rgb(0, 0, 0);
+  transform: translateY(-20%) scale(1.2);
+}
+
