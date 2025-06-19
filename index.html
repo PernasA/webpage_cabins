@@ -22,7 +22,7 @@
     </div>
 
     <nav>
-      <button onclick="showTab('info', ' ')">Información General</button>
+      <button onclick="showTab('info', this)">Información General</button>
       <button onclick="showTab('unidad2', this)">Unidad para 2 personas</button>
       <button onclick="showTab('unidad4', this)">Unidad para 4 personas</button>
       <button onclick="showTab('entorno', this)">Entorno y Paseos</button>
@@ -111,82 +111,186 @@
   </section>
 
   <!-- Lo demás sigue igual... -->
-  </section>
-
-    <section id="unidad2" class="tab-content">
-      <h2>Unidad para 2 personas</h2>
-      <!-- Carruseles o imágenes aquí -->
-       
-    </section>
+  <section id="unidad2" class="tab-content hidden">
+  <div class="info-section">
+    <div class="info-img" style="flex: 1;">
+      <div class="glider-contain" style="position: relative;">
+          <button class="glider-prev"><i class="fas fa-chevron-left"></i></button>
+            <div class="glider">
+              <img src="images/images_2_pax/cama_mono.jpeg" alt="cama">
+              <img src="images/images_2_pax/vista_4.jpeg" alt="foto monoambiente">
+              <img src="images/images_2_pax/baño monoambiente nueva.jpeg" alt="foto monoambiente">
+              <img src="images/images_2_pax/foto paisaje nueva.jpeg" alt="foto monoambiente">
+              <img src="images/images_2_pax/estacionamiento.jpeg" alt="foto monoambiente">
+              <img src="images/images_2_pax/monoambiente nuevo angulo.jpeg" alt="foto monoambiente">
+              <img src="images/images_2_pax/frente_mono.jpeg" alt="foto monoambiente">
+              <img src="images/images_2_pax/parrilla paisaje.jpeg" alt="foto monoambiente">
+              <img src="images/images_2_pax/monoambiente nueva foto cama.jpeg" alt="foto monoambiente">
+              <img src="images/images_2_pax/luna montaña.jpeg" alt="foto monoambiente">
+            </div>
+          <button class="glider-next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="unidad4-highlights">
+          <div class="highlight">🛏️ Cama matrimonial + cama marinera</div>
+          <div class="highlight">🏡 Ambientes separados</div>
+          <div class="highlight">🛁 Baño y antebaño</div>
+          <div class="highlight">🌿 Espacio verde</div>
+          <div class="highlight">🚗 Cochera</div>
+          <div class="highlight">🔥 Asador privado</div>
+          <div class="highlight">🏠 Planta baja – Hasta 4 personas</div>
+        </div>
+    </div>
+  </div>
+</section>
 
 <section id="unidad4" class="tab-content hidden">
   <div class="info-section">
     <div class="info-img" style="flex: 1;">
       <div class="glider-contain" style="position: relative;">
-        <div class="glider-contain">
           <button class="glider-prev"><i class="fas fa-chevron-left"></i></button>
             <div class="glider">
-              <img src="images/images_4_pax/cama 1.jpeg" alt="cama 1">
-              <img src="images/images_4_pax/cama 2.jpeg" alt="cama 2">
-              <img src="images/images_4_pax/cama depto 2.jpeg" alt="cama depto 2">
-              <img src="images/images_4_pax/camas individuales 1 1.jpeg" alt="camas individuales 1 1">
-              <img src="images/images_4_pax/camas individuales 1.jpeg" alt="camas individuales 1">
-              <img src="images/images_4_pax/cartel .jpeg" alt="cartel">
-              <img src="images/images_4_pax/chivito.jpeg" alt="chivito">
-              <img src="images/images_4_pax/depto_4_living.jpeg" alt="depto 4 living">
-              <img src="images/images_4_pax/espejo 2.jpeg" alt="espejo 2">
-              <img src="images/images_4_pax/estacionamiento.jpeg" alt="estacionamiento">
-              <img src="images/images_4_pax/living 2.jpeg" alt="living 2">
-              <img src="images/images_4_pax/mesa sillas 2.jpeg" alt="mesa sillas 2">
-              <img src="images/images_4_pax/parrilla 2.jpeg" alt="parrilla 2">
+              <img src="images/images_4_pax/cama depto 2 .jpeg" alt="cama">
+              <img src="images/images_4_pax/depto_4_living.jpeg" alt="depto living">
+              <img src="images/images_4_pax/antebaño nueva foto.jpeg" alt="cama">
               <img src="images/images_4_pax/patio_sillas.jpeg" alt="patio sillas">
+              <img src="images/images_4_pax/cartel.jpeg" alt="cartel">
+              <img src="images/images_4_pax/living 1 nuevo.jpeg" alt="living">
+              <img src="images/images_4_pax/chivito.jpeg" alt="chivito">
+              <img src="images/images_4_pax/estacionamiento.jpeg" alt="estacionamiento">
+              <img src="images/images_4_pax/living 2.jpeg" alt="living">
+              <img src="images/images_4_pax/cama 2.jpeg" alt="cama">
+              <img src="images/images_4_pax/camas individuales 1.jpeg" alt="camas individuales">
+              <img src="images/images_4_pax/mesa sillas 2.jpeg" alt="mesa sillas">
+              <img src="images/images_4_pax/parrilla 2.jpeg" alt="parrilla">
             </div>
           <button class="glider-next"><i class="fas fa-chevron-right"></i></button>
         </div>
-      </div>
+        <div class="unidad4-highlights">
+          <div class="highlight">🛏️ Cama matrimonial + cama marinera</div>
+          <div class="highlight">🏡 Ambientes separados</div>
+          <div class="highlight">🛁 Baño y antebaño</div>
+          <div class="highlight">🌿 Espacio verde</div>
+          <div class="highlight">🚗 Cochera</div>
+          <div class="highlight">🔥 Asador privado</div>
+          <div class="highlight">🏠 Planta baja – Hasta 4 personas</div>
+        </div>
+
     </div>
   </div>
 </section>
 
+<section id="entorno" class="galeria-lugar tab-content hidden">
+  <h2>✨ Mirador del Sol y Filo Serrano</h2>
 
-    <!-- ENTORNO -->
-    <section id="entorno" class="tab-content hidden">
-      <h2>Entorno y Paseos por Merlo</h2>
+  <div class="galeria">
+    <img src="images/images_trips/pueblo escondido lejos.jpeg" alt="Arroyo natural">
+    <img src="images/images_trips/salto del tigre congelado.jpeg" alt="Sendero entre árboles">
+    <img src="images/images_trips/reserva florofaunistica vista.jpeg" alt="Atardecer en las sierras">
+    <img src="images/images_home/vista_4.jpeg" alt="Mirador con vista panorámica">
+  </div>
 
-      <div class="carousel-group">
-        <h3>🏞️ Paseos cercanos</h3>
-        <div class="carousel" data-carousel>
-          <img src="images/paseo-1.jpg" alt="Paseo 1" />
-          <img src="images/paseo-2.jpg" alt="Paseo 2" />
-        </div>
-      </div>
+  <p class="galeria-descripcion">
+    Rodeado de naturaleza, el lugar ofrece senderos, vistas inigualables y la tranquilidad de las sierras.
+  </p>
 
-      <div class="carousel-group">
-        <h3>🌄 Vistas naturales</h3>
-        <div class="carousel" data-carousel>
-          <img src="images/vistas-1.jpg" alt="Vista 1" />
-          <img src="images/vistas-2.jpg" alt="Vista 2" />
-        </div>
-      </div>
-    </section>
+  <h2>🏞️ Reserva Florofaunística y Salto del Tabaquillo</h2>
+
+  <div class="galeria">
+    <img src="images/images_comunes/asador.jpeg" alt="Asador compartido">
+    <img src="images/images_comunes/patio_comun.jpeg" alt="Patio con sombra natural">
+    <img src="images/images_comunes/mesa_exterior.jpeg" alt="Mesa al aire libre">
+    <img src="images/images_comunes/cochera.jpeg" alt="Cochera techada">
+  </div>
+</section>
+
+
 
     <!-- CONTACTO -->
-    <section id="contacto" class="tab-content hidden">
-      <h2>Contacto</h2>
-      <p>📞 Teléfono: +54 9 2664 123456</p>
-      <p>📧 Email: contacto@milugarenmerlo.com</p>
-      <p>📍 Dirección: Villa de Merlo, San Luis, Argentina</p>
-      <p>
-        📝 Comentarios de huéspedes:  
-        <a href="https://www.alquilerargentina.com/alojamientos/df49-Casa-Mi-Lugar-en-Merlo-Villa-De-Merlo.html" target="_blank">
-          Ver en AlquilerArgentina
-        </a>
-      </p>
-    </section>
+<section id="contacto" class="tab-content hidden contacto-section">
+  <div class="contacto-col izq">
+    <p>📞 Teléfono: +54 9 2664 007600</p>
+    <p>📧 Email: contacto@milugarenmerlo.com</p>
+    <p>
+      📍 Ubicación: Rincón del Este, Villa de Merlo, San Luis, Argentina
+      <img src="https://flagcdn.com/w40/ar.png" alt="Argentina" style="height: 20px; vertical-align: middle; margin-left: 6px;">
+    </p>
+    <p>
+       📷 Cuenta de:  
+      <a href="https://www.instagram.com/milugarenmerlo" target="_blank" class="link-dorado">
+        Instagram
+      </a>
+    </p>
+  </div>
+
+  <div class="contacto-wpp-box">
+    <h3>Para consultas directas, escribinos por WhatsApp</h3>
+    <a href="https://wa.link/gg1x5b" class="boton-wpp" target="_blank">
+      <svg class="icono-wpp-black"><use xlink:href="#icono-whatsapp" /></svg>
+      WhatsApp
+    </a>
+  </div>
+
+  <h2 class="comentarios-titulo">📝 Comentarios de huéspedes 📝</h2>
+  <p class="comentarios-link">
+    Podés ver más en
+    <a href="https://www.alquilerargentina.com/alojamientos/df49-Casa-Mi-Lugar-en-Merlo-Villa-De-Merlo.html" target="_blank" class="link-dorado">
+      Alquiler Argentina</a>
+     (hay más de 170 comentarios desde 2016)
+  </p>
+
+    <div class="glider-box">
+      <div class="glider-contain">
+        <button class="glider-prev"><i class="fas fa-chevron-left"></i></button>
+        <div class="glider glider-comentarios" id="glider-comentarios">
+          <img src="images/comentarios/comentario19.png" alt="Comentario 19">
+          <img src="images/comentarios/comentario1.png" alt="Comentario 1">
+          <img src="images/comentarios/comentario14.png" alt="Comentario 14">
+          <img src="images/comentarios/comentario2.png" alt="Comentario 2">
+          <img src="images/comentarios/comentario12.png" alt="Comentario 12">
+          <img src="images/comentarios/comentario3.png" alt="Comentario 3">
+          <img src="images/comentarios/comentario17.png" alt="Comentario 17">
+          <img src="images/comentarios/comentario4.png" alt="Comentario 4">
+          <img src="images/comentarios/comentario13.png" alt="Comentario 13">
+          <img src="images/comentarios/comentario5.png" alt="Comentario 5">
+          <img src="images/comentarios/comentario18.png" alt="Comentario 18">
+          <img src="images/comentarios/comentario6.png" alt="Comentario 6">
+          <img src="images/comentarios/comentario9.png" alt="Comentario 9">
+          <img src="images/comentarios/comentario10.png" alt="Comentario 10">
+          <img src="images/comentarios/comentario11.png" alt="Comentario 11">
+          <img src="images/comentarios/comentario15.png" alt="Comentario 15">
+          <img src="images/comentarios/comentario7.png" alt="Comentario 7">
+          <img src="images/comentarios/comentario16.png" alt="Comentario 16">
+          <img src="images/comentarios/comentario8.png" alt="Comentario 8">
+          <img src="images/comentarios/comentario20.png" alt="Comentario 20">
+          <!-- Agregá más imágenes según tengas -->
+        </div>
+        <button class="glider-next"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
   </main>
 
-  <footer>
-    <p>© 2025 Cabañas Mi Lugar en Merlo. Todos los derechos reservados.</p>
+  <footer class="footer-contenido">
+  <p>
+    © 2025 Cabañas Mi Lugar en Merlo. Todos los derechos reservados.
+  </p>
+
+  <div class="footer-wpp">
+    <span>Consultas al WhatsApp: +54 9 2664 007600</span>
+      <a href="https://wa.link/gg1x5b" class="boton-wpp-footer" target="_blank">
+        <svg class="icono-wpp"><use xlink:href="#icono-whatsapp" /></svg>
+        WhatsApp
+      </a>
+    </div>
   </footer>
+
+
+  <!-- Ícono SVG reutilizable -->
+<svg style="display: none;">
+  <symbol id="icono-whatsapp" viewBox="0 0 32 32">
+    <path d="M16 .396C7.163.396 0 7.559 0 16.396c0 2.891.765 5.636 2.215 8.087L0 32l7.728-2.196a15.88 15.88 0 0 0 8.272 2.268h.001c8.837 0 16-7.163 16-16.002S24.837.396 16 .396zm0 29.002a13.009 13.009 0 0 1-6.63-1.798l-.475-.283-4.59 1.306 1.372-4.472-.308-.46a12.942 12.942 0 0 1-2.002-6.918c0-7.18 5.835-13.016 13.016-13.016 3.479 0 6.75 1.355 9.191 3.814a12.93 12.93 0 0 1 3.825 9.202c-.001 7.181-5.837 13.025-13.019 13.025zm7.164-9.937c-.394-.197-2.331-1.15-2.691-1.28-.36-.132-.623-.197-.885.198s-1.015 1.28-1.245 1.543c-.23.264-.46.296-.854.099s-1.663-.613-3.166-1.956c-1.17-1.043-1.96-2.336-2.19-2.73-.23-.396-.025-.609.173-.805.178-.176.394-.46.592-.69.198-.23.263-.396.394-.66.132-.264.066-.495-.033-.692s-.885-2.14-1.213-2.929c-.32-.769-.643-.664-.885-.675l-.754-.012c-.263 0-.692.099-1.055.495s-1.387 1.355-1.387 3.299 1.421 3.827 1.618 4.093c.197.264 2.8 4.273 6.787 5.996 3.987 1.724 3.987 1.15 4.705 1.082.719-.066 2.331-.951 2.663-1.867.33-.916.33-1.703.23-1.867-.099-.165-.36-.264-.754-.46z"/>
+  </symbol>
+</svg>
+
 </body>
 </html>

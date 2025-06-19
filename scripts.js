@@ -62,6 +62,9 @@ function showTab(id, button) {
   if (button) {
     titleElement.textContent = button.textContent;
 
+    if(button.textContent == "Información General"){
+      titleElement.textContent = ""
+    }
     // Opcional animación suave
     titleElement.classList.remove('visible');
     void titleElement.offsetWidth; // forza reflow
@@ -78,12 +81,13 @@ function showTab(id, button) {
     button.classList.add('selected');
   }
 
-  // Inicializa o refresca los gliders (carruseles)
   setTimeout(() => {
     target.querySelectorAll('.glider').forEach(gliderEl => {
+      const isComentarios = gliderEl.id === 'glider-comentarios';
+
       if (!gliderEl.classList.contains('glider-initialized')) {
         const gliderInstance = new Glider(gliderEl, {
-          slidesToShow: 1.6,
+          slidesToShow: isComentarios ? 3 : 1.6,
           slidesToScroll: 1,
           draggable: true,
           rewind: true,
@@ -92,13 +96,24 @@ function showTab(id, button) {
             prev: gliderEl.parentElement.querySelector('.glider-prev'),
             next: gliderEl.parentElement.querySelector('.glider-next')
           },
-          itemWidth: 300
+          // opcional: más configuración para comentarios
+          duration: isComentarios ? 0.4 : 0.25,
+          dots: isComentarios ? true : false,
         });
+
         gliderEl._glider = gliderInstance;
         gliderEl.classList.add('glider-initialized');
       } else {
         gliderEl._glider.refresh(true);
       }
+      if (isComentarios) {
+        setInterval(() => {
+          if (gliderEl._glider) {
+            gliderEl._glider.scrollItem(gliderEl._glider.page + 1);
+          }
+        }, 4000);
+      }
+
     });
   }, 100);
 }
